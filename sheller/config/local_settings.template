@@ -1,0 +1,9 @@
+# Connection Config for SHELLER's own database
+SQLALCHEMY_DATABASE_URI = 'mysql+pymysql://user:password@127.0.0.1:3306/sheller?charset=utf8'
+SQLALCHEMY_ECHO = True
+
+# Redis
+REDIS_URL = 'redis://127.0.0.1:6379/0'
+
+# Logger
+LOG_LEVEL = 'DEBUG'
