@@ -3,7 +3,7 @@ from .helpers import fix_assets_path
 PROXIES_COUNT = 1
 
 # Connection Config for Sheller's own database
-SQLALCHEMY_DATABASE_URI = 'mysql+pymysql://user:password@127.0.0.1:3306/sheller?charset=utf8'
+SQLALCHEMY_DATABASE_URI = 'mysql+pymysql://root:123abc.@127.0.0.1:3306/sheller?charset=utf8'
 SQLALCHEMY_DISABLE_POOL = False
 SQLALCHEMY_TRACK_MODIFICATIONS = False
 SQLALCHEMY_ECHO = False
@@ -16,8 +16,8 @@ LOG_PREFIX = 'sheller'
 LOG_FORMAT = LOG_PREFIX + ':[%(asctime)s][PID:%(process)d][%(levelname)s][%(name)s] %(message)s'
 
 # Static
-STATIC_ASSETS_PATH = fix_assets_path('../client/app/dist/static/')
-TEMPLATE_PATH = fix_assets_path('../client/app/dist/')
+STATIC_ASSETS_PATH = fix_assets_path('../client/app/dist/static')
+TEMPLATE_PATH = fix_assets_path('../client/app/dist')
 
 # Storage File
 UPLOAD_PATH = fix_assets_path('../storage/images/')
